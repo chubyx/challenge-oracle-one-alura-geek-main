@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Alura Geek</title>
+</head>
+
+<body>
+    <header class="container header">
+        <div class="logo">
+            <a class="logo__link" href="./index.html">
+                <img src="./img/logo-geek.png" alt="logo-geek">
+                Alura <span>Geek</span>
+            </a>
+            <div class="buscador">
+                <input class="buscador__input" type="text" placeholder="Que desea buscar?">
+                <button class="buscador__button">
+                    <img src="./img/lupa-buscador.png" alt="lupa-buscador">
+                </button>
+            </div>
+        </div>
+        <a class="button button__login" href="./productos-admin.html">
+            Menu Administrador
+        </a>
+        <button class="buscador__button buscador__button--active">
+            <img src="./img/lupa-buscador.png" alt="lupa-buscador">
+        </button>
+
+    </header>
+
+    <main>
+        <div class="section-formulario-login">
+            <section class="container">
+                
+                <form class="formulario__agregar" id="form__agregar" action="">
+                    <h2>Agregar Producto</h2>
+                    <label class="formulario__nombre" for="url-img">
+                        URL de la imagen
+                        <input id="url-img" data-form-add-url type="text" placeholder="www.imagen.com">
+                    </label>
+                    <label class="formulario__nombre" for="categoria">
+                        Categoria
+                        <input id="categoria" data-form-add-category type="text" placeholder="Ej : Consola">
+                    </label>
+                    <label class="formulario__nombre" for="nombre-producto">
+                        Nombre del producto
+                        <input id="nombre-producto" data-form-add-name type="text" placeholder="">
+                    </label>
+                    <label class="formulario__nombre" for="precio-producto">
+                        Precio del producto
+                        <input id="precio-producto" data-form-add-price type="number" placeholder="">
+                    </label>
+                    <div>
+                        <textarea class="formulario__mensaje" data-form-add-desc name="" id="descripcion" cols="30" rows="10"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="button">
+                        Agregar Producto
+                    </button>
+                    <p id="mensaje-error"></p>
+                </form>
+            </section>
+        </div>
+        <section class="contacto-fondo">
+            <div class="container contacto">
+                <a class="logo__link logo__link--formulario" href="#">
+                    <img src="./img/logo-geek.png" alt="logo-geek">
+                    Alura <span>Geek</span>
+                </a>
+                <ul class="contacto__links">
+                    <li><a href="#">Quienes somos</a></li>
+                    <li><a href="#">Politica de privacidad</a></li>
+                    <li><a href="#">Programa de fidelidad</a></li>
+                    <li><a href="#">Nuestras tiendas</a></li>
+                    <li><a href="#">Quiero ser franquiciado</a></li>
+                    <li><a href="#">Anuncie aqui</a></li>
+                </ul>
+                <form action="" class="formulario">
+                    <p>Hable con nosostros</p>
+                    <label class="formulario__nombre" for="nombre">
+                        Nombre
+                        <input id="nombre" type="text">
+                    </label>
+                    <textarea class="formulario__mensaje" name="mensaje" id=""
+                        placeholder="Escribe tu mensaje"></textarea>
+                    <button class="button formulario__button" type="submit">Enviar mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Carlos Duque</p>
+        <p>2023</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"></script>
+    <script type="module" src="./controllers/agregar.producto.js"></script>
+    <script type="module" src="./validations/product.validation.js"></script>
+    
+</body>
+
+</html>

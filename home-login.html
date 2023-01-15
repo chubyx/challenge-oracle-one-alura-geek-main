@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Alura Geek</title>
+</head>
+
+<body>
+    <header class="container header">
+        <div class="logo">
+            <a class="logo__link" href="./index.html">
+                <img src="./img/logo-geek.png" alt="logo-geek">
+                Alura <span>Geek</span>
+            </a>
+            <div class="buscador">
+                <input class="buscador__input" type="text" placeholder="Que desea buscar?">
+                <button class="buscador__button">
+                    <img src="./img/lupa-buscador.png" alt="lupa-buscador">
+                </button>
+            </div>
+        </div>
+        <button class="button button__login button__login--active">
+            Login
+        </button>
+        <button class="buscador__button buscador__button--active">
+            <img src="./img/lupa-buscador.png" alt="lupa-buscador">
+        </button>
+
+    </header>
+
+    <main>
+        <div class="section-formulario-login">
+            <section class="container">
+                <form class="formulario__login" id="formulario__login" action="">
+                    <p>Iniciar Sesion</p>
+                    <label class="formulario__nombre" for="correo">
+                        <input id="correo" name="email" type="email" placeholder="Escriba su correo electronico">
+                    </label>
+                    <label class="formulario__nombre" for="password">
+                        <input id="password" name="password" type="password" placeholder="Escriba su contraseña">
+                    </label>
+                    <button class="button">
+                        Entrar
+                    </button>
+                    <p id="mensaje-error"></p>
+                </form>
+            </section>
+        </div>
+        <section class="contacto-fondo">
+            <div class="container contacto">
+                <a class="logo__link logo__link--formulario" href="#">
+                    <img src="./img/logo-geek.png" alt="logo-geek">
+                    Alura <span>Geek</span>
+                </a>
+                <ul class="contacto__links">
+                    <li><a href="#">Quienes somos</a></li>
+                    <li><a href="#">Politica de privacidad</a></li>
+                    <li><a href="#">Programa de fidelidad</a></li>
+                    <li><a href="#">Nuestras tiendas</a></li>
+                    <li><a href="#">Quiero ser franquiciado</a></li>
+                    <li><a href="#">Anuncie aqui</a></li>
+                </ul>
+                <form action="" class="formulario">
+                    <p>Hable con nosostros</p>
+                    <label class="formulario__nombre" for="nombre">
+                        Nombre
+                        <input id="nombre" name="nombre" type="text">
+                    </label>
+                    <textarea class="formulario__mensaje" name="mensaje" id=""
+                        placeholder="Escribe tu mensaje"></textarea>
+                    <button class="button formulario__button" type="submit">Enviar mensaje</button>
+                    
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Carlos Duque</p>
+        <p>2023</p>
+    </footer>
+    <script src="./validations/loginValidations.js"></script>
+</body>
+
+</html>
